@@ -1,0 +1,58 @@
+body{
+	height: 95vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+main{
+	padding: 2em;
+	border-radius: 2em;
+	background-color: rgb(135, 30, 255);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 10px;
+}
+input{
+	color: white;
+	background-color: rgba(255, 0, 255, 0.381);
+	width: 100%;
+	border-radius: 2em;
+	font-size: 1.5em;
+	border:2px solid white;
+	padding:0 .5em;
+}
+h1,input::placeholder{
+	color: white;
+}
+section{
+	text-align: center;
+}
+button{
+	background-color: aquamarine;
+	border:2px solid lime;
+}
+section>button{
+	border-radius: 2em;
+	width:40% ;
+}
+main>button{
+	border-radius: 2em;
+	width:30% ;	
+}
+p{
+	text-align: center;
+	padding: .5em;
+	min-height: 1em;
+	width: 100%;
+	word-wrap: break-word;
+	background-color: rgb(140, 201, 255);
+	border-radius: 2em;
+	transition: .4s;
+}
+p:hover{
+	scale: 1.5;
+	box-shadow: 0 0 20px 1px rgb(140, 201, 255);
+}

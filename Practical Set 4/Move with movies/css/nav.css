@@ -1,0 +1,30 @@
+nav,nav>button{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+nav>button{
+	background-color: darkgoldenrod;
+	border: none;
+	border-radius:1.5em;
+	padding: 10px;
+	transition: .4s;
+}
+nav>button>img{
+	height: 2em;
+}
+nav>button:hover{
+	scale: 1.2;
+	border-radius: 1.8em;
+	background-color: #FFBB10;
+	border: 5px solid white;
+}
+nav{
+	margin: 0 3vw;
+	z-index: 200;
+	justify-content: space-between;
+	width: 94vw;
+	position: fixed;
+	top:.5em;
+}

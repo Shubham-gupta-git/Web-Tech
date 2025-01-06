@@ -1,0 +1,45 @@
+#academic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#academic h4{
+    margin: 10px 0;
+}
+#achi{
+    background-color: rgb(255, 201, 135);
+    box-shadow: 0 0 20px rgb(160, 144, 125);
+    border-radius: 2em;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    gap: 1em;
+}
+#qual{
+    gap: 1em;
+    display: flex;
+    flex-direction: column;
+    padding: 0 2em;
+}
+#qual>ul{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+#q1{
+    width: 25%;
+}
+.u1>li{
+    list-style: none;
+}
+.u2{
+    padding: 0 0 0 2em;
+    line-height: 1.6;
+}
+.u2>li{
+    list-style: disc;
+}
+#achi ol>li{
+    padding: 0 em;    
+}

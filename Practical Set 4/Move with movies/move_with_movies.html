@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Move with Movies</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/nav.css">
+	<link rel="stylesheet" href="css/new.css">
+	<link rel="stylesheet" href="css/search.css">
+</head>
+
+<body>
+	<header>
+		<img src="asset/main/Move with Movies.svg" alt="" srcset="" id="title">
+	</header>
+	<nav id="nav">
+		<button id="adnm"><img class="icon" src="asset/main/plus.svg" alt="add movie"></button>
+		<button id="srm"><img class="icon" src="asset/main/search.svg" alt="search movie"></button>
+	</nav>
+	<main id="mbox">
+		<section class="mbox"  id="Elysium">
+			<img src="asset/mlogo/elysium.png" class="mposter">
+			<h2 class="mname">Elysium</h2>
+			<p class="mdesc">In the year 2154, the very wealthy live on a man-made space station while the rest of the population resides on a ruined Earth. A man takes on a mission that could bring equality to the polarized worlds.</p>
+		</section>
+		<section class="mbox" id="Avengers:_Endgame		">
+			<img src="asset/mlogo/avengers.png" class="mposter">
+			<h2 class="mname">Avengers: Endgame			</h2>
+			<p class="mdesc">The grave course of events set in motion by Thanos, that wiped out half the universe and fractured the Avengers ranks, compels the remaining Avengers to take one final stand in Marvel Studios' grand conclusion to twenty-two films - Avengers: Endgame.</p>
+		</section>
+		<section class="mbox" id="The_Pursuit_of_Happyness">
+			<img src="asset/mlogo/hapyness.png" class="mposter">
+			<h2 class="mname">The Pursuit of Happyness</h2>
+			<p class="mdesc">Chris Gardner’s memoir, The Pursuit of Happyness, details his pursuit of the American Dream and desire to rise against the challenging circumstances of his birth and attain success.</p>
+		</section>
+		<section class="mbox" id="Loki">
+			<img src="asset/mlogo/Loki.png" class="mposter">
+			<h2 class="mname">Loki</h2>
+			<p class="mdesc">The mercurial villain Loki resumes his role as the God of Mischief in a new series that takes place after the events of “Avengers: Endgame.” Loki learns the true nature of 'glorious purpose' as he rectifies the past.</p>
+		</section>
+		<section class="mbox" id="Avatar">
+			<img src="asset/mlogo/Avatar.png" class="mposter">
+			<h2 class="mname">Avatar</h2>
+			<p class="mdesc">A paraplegic Marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home.</p>
+		</section>
+		<section class="mbox" id="A_Minecraft_Movie">
+			<img src="asset/mlogo/Minecraft.png" class="mposter">
+			<h2 class="mname">A Minecraft Movie</h2>
+			<p class="mdesc">Four misfits are suddenly pulled through a mysterious portal into a bizarre, cubic wonderland that thrives on imagination. To get back home, they'll have to master this world while embarking on a quest with an unexpected, expert crafter.</p>
+		</section>
+	</main>
+	<div id="overlayadd">
+		<div id="new">
+			<div id="ibox">
+				<div id="npcont">
+					<img id="npost" src="asset/mlogo/default.png" alt="" />
+				</div>
+				<div class="inpcont">
+					<label for="newposter">Enter poster URL:</label>
+					<input id="newposter" type="text" placeholder="URL">
+				</div>
+				<div class="inpcont">
+					<label for="newmovie">Enter movie name:</label>
+					<input id="newmovie" type="text" placeholder="Movie name">
+				</div>
+				<div class="inpcont">
+					<label for="newdesc">Enter movie description:</label>
+					<input id="newdesc" type="text" placeholder="Description">
+				</div>
+			</div>
+			<div id="ibuts">
+				<button id="add" type="submit">Add</button>
+				<button id="cancel">Cancel</button></button>
+			</div>
+			<p id="info"></p>
+		</div>
+	</div>
+	<div id="overlaysearch">
+		<div id="srb">
+			<button id="clsrc">&cross;</button>
+			<input type="text" id="sbox">
+			<div id="searchres">
+
+			</div>
+		</div>
+	</div>
+	<script src="js/var.js"></script>
+	<script src="js/func.js"></script>
+	<script src="js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	width: 100vw;
+}
+input{
+	outline: none;
+}
+header{
+	z-index: 100;
+	background-color: white;
+	position: sticky;
+	top: 0;
+	padding: .5em;
+	text-align: center;
+}
+#title{
+	height: 2em;
+}
+main{
+	margin:1em;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 2em;
+}
+.mbox{
+	background-color: white;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+	border-radius: 1em;
+	padding: 1em;
+	box-shadow: 0 0 10px #00000061;
+	width: 200px;
+	transition: .4s;
+}
+.mbox:hover{
+	scale: 1.05;
+}
+.mposter{
+	height: 270px;
+	width: 200px;
+	border-radius: 1em;
+	overflow: hidden;
+}
+.mdesc{
+	max-height: 4.8em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}

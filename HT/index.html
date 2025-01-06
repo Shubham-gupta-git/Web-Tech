@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Slider</title>
+	<style>
+		.switch{
+			display: inline-block;
+			position: relative;
+			background-color: white;
+		}
+		.sbox{
+			height: 50px;
+			width: 400px;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+		}
+		.inner{
+			z-index: 1;
+			background-color: rgb(191, 202, 241);
+			height: 40px;
+			width: 90px;
+			border-radius: 40px;
+			transition: .4s;
+		}
+		input[type="radio"]{
+			opacity: 0;
+		}
+		#slider {
+			position: absolute;
+			cursor: pointer;
+			height: 0;
+			background-color: #ccc;
+			transition: .4s;
+		}
+		#slider:before {
+			position: absolute;
+			content: "";
+			border-radius: 42px;
+			top: -48px;
+			height: 46px;
+			width: 94px;
+			left: 3px;
+			background-color: #1f88d9;
+			transition: .4s;
+			pointer-events: none;
+			transition: .5s;
+			transform: translateX(var(--pos));
+		}
+		.inner:hover {
+			box-shadow: 0 0 10px #2196F3;
+		}
+	</style>
+</head>
+<body onload="oc()">
+	<section class="switch">
+		<div class="sbox" for="hi" >
+			<label class="inner">
+				<input type="radio" name="hi" id="up" checked>
+			</label>
+			<label class="inner">
+				<input type="radio" name="hi" id="low">
+			</label>
+			<label class="inner">
+				<input type="radio" name="hi" id="rev">
+			</label>
+			<label class="inner">
+				<input type="radio" name="hi" id="conc">
+			</label>
+		</div>
+		<span id="slider" style="--pos:0px;"></span>
+	</section>
+	<script>
+		let up= document.getElementById("up");
+		let low= document.getElementById("low");
+		let rev= document.getElementById("rev");
+		let conc= document.getElementById("conc");
+		let slider= document.getElementById("slider");
+		
+		function oc(){
+			up.parentElement.style.backgroundColor ="transparent";
+			if (up.checked){
+				slider.style.setProperty("transform", 'translateX(0px)');
+				up.parentElement.style.backgroundColor ="transparent";
+			}
+			else{
+				up.parentElement.style.backgroundColor ="rgb(191, 202, 241)";
+			}
+			if (low.checked){
+				slider.style.setProperty("transform", 'translateX(100px)');
+				low.parentElement.style.backgroundColor ="transparent";
+			}
+			else{
+				low.parentElement.style.backgroundColor ="rgb(191, 202, 241)";
+			}
+			if (rev.checked){
+				slider.style.setProperty("transform", 'translateX(200px)');
+				rev.parentElement.style.backgroundColor ="transparent";
+			}
+			else{
+				rev.parentElement.style.backgroundColor ="rgb(191, 202, 241)";
+			}
+			if (conc.checked){
+				slider.style.setProperty("transform", 'translateX(300px)');
+				conc.parentElement.style.backgroundColor ="transparent";
+			}
+			else{
+				conc.parentElement.style.backgroundColor ="rgb(191, 202, 241)";
+			}			
+		}
+		up.onload=function() {oc()}
+		up.onclick=function() {oc()}
+		low.onclick=function() {oc()}
+		rev.onclick=function() {oc()}
+		conc.onclick=function() {oc()}
+		</script>
+</body>
+</html>

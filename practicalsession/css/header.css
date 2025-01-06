@@ -1,0 +1,30 @@
+header{
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-color: #5e5e5e;
+    position: sticky;
+    top: 0;
+}
+#logo>img{
+    height: 7vh;
+}
+nav>ul{
+    font-size: 20px;
+    display: flex;
+    gap: 20px;
+    padding: 0 5px;
+}
+nav li{
+    list-style: none;
+}
+nav a{
+    color: white;
+    text-decoration-color: rgba(0, 128, 255, 0);
+    transition: .4s;
+}
+nav a:hover{
+    font-size: 1.2em;
+    text-decoration-color: rgba(0, 128, 255);
+}

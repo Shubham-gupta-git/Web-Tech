@@ -1,0 +1,47 @@
+#overlaysearch {
+	position: absolute;
+	width: 100%;
+	top: 3em;
+	display: none;
+}
+#srb{
+	height: calc(100vh - 3em);
+	background-color: #ffffff8c;
+	position: fixed;
+	width: 100%;
+	align-items: center;
+	flex-direction: column;
+	padding: 2em;
+}
+#clsrc{
+	position: absolute;
+	top: 1px;
+	font-size: 50px;
+	background-color: transparent;
+	border: none;
+}
+#sbox{
+	position: absolute;
+	right: 25%;
+	width: 50vw;
+	border: 2px solid black;
+	padding: 5px;
+	border-radius: 5px;
+}
+#searchres{
+	width: 100vw;
+	max-height:70vh;
+	overflow-x: scroll;
+	z-index: 300;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 1em;
+}
+#searchres .mbox{
+	scale: .8;
+}

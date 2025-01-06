@@ -1,0 +1,20 @@
+h1{
+	color: rgb(154, 7, 190);
+}
+table,th,td{
+	text-align: center;
+	border:2px solid #cacaca;
+	border-collapse: collapse;
+}
+.office{
+	background-color: #ffcb99;
+}
+.mat{
+	background-color: #04ff00;
+}
+.meeting{
+	background-color: #cccccc;
+}
+.csc{
+	background-color: #f9f;
+}

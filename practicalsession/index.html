@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Portfilio</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/personal.css">
+	<link rel="stylesheet" href="css/acdemic.css">
+	<link rel="stylesheet" href="css/contact.css">
+</head>
+
+<body>
+	<header>
+		<div id="logo"><img src="asset/Portfolio.svg"></div>
+		<nav>
+			<ul>
+				<li><a href="#personal">Personal</a></li>
+				<li><a href="#academic">Academic</a></li>
+				<li><a href="#contact">Contact me</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section id="personal">
+			<div id="pchi">
+				<div id="intro">
+					<p>Hello there!</p>
+					<h1>I'm Shubham Gupta</h1>
+					<p>Meet a learner of science, from science I mean all the fields of Science specificly in Physics
+						and Computer Science.</p>
+				</div>
+				<div id="cover">
+					<img src="asset/me.jpg">
+				</div>
+			</div>
+		</section>
+		<section id="academic">
+			<div id="achi">
+				<h2>Academics</h2>
+				<div id="qual">
+					<h3>Qualifications</h3>
+					<ul class="u1">
+						<li>
+							<p>B.Tech. (CSE) [1st year -2024]</p>
+						</li>
+					</ul>
+					<h3>Skills</h3>
+					<ul class="u1">
+						<li>
+							<h4>Programing Languages</h4>
+							<ul class="u2">
+								<li>Python</li>
+								<li>C/C++</li>
+								<li>JavaScript</li>
+							</ul>
+						</li>
+						<li>
+							<h4>Other Technolgies</h4>
+							<ul class="u2">
+								<li>MySQL</li>
+								<li>Pandas - Python</li>
+								<li>NumPy - Python</li>
+								<li>Matplotlib - Python</li>
+							</ul>
+						</li>
+						<li>
+							<h4>Projects</h4>
+							<ul class="u2">
+								<li>Ongoing</li>
+								<li>Soon on display</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section id="contact">
+			<div id="cchi">
+				<h2>Contact me</h2>
+				<form>
+					<section class="felement">
+						<label for="purpose">Purpose of contact:</label>
+						<div class="inpwidth">
+							<select name="purpose" id="purpose">
+								<option value="pur" disabled selected>Purpose</option>
+								<option value="Job/Business">Job/Business</option>
+								<option value="Project/Business">Project/Business</option>
+								<option value="Other">Other</option>
+							</select>
+						</div>
+					</section>
+					<section class="felement">
+						<label for="Name">Name:</label>
+						<div class="inpwidth">
+							<input id="Name" name="Name" type="text" placeholder="Name" required minlength="3">
+						</div>
+					</section>
+					<section class="felement">
+						<label for="Email">
+							Enter Email:
+						</label>
+						<div class="inpwidth">
+							<input id="Email" type="email" name="Email" id="email" placeholder="Email" required>
+						</div>
+					</section>
+					<section class="felement">
+						<label for="Phone">
+							Enter Phone no.:
+						</label>
+						<div class="inpwidth">
+							<input id="Phone" type="tel" name="Phone" placeholder="Phone no." required>
+						</div>
+					</section>
+					<section class="">
+						<button class="inpwidth" id="Submit">Submit</button>
+					</section>
+				</form>
+			</div>
+		</section>
+	</main>
+</body>
+
+</html>

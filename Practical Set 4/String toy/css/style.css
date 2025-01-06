@@ -1,0 +1,40 @@
+main{
+	background-image: radial-gradient(#FFFFFF,#bed6f7);
+	border-radius: 20px;
+	padding: 2em;
+	
+}
+h1{
+	text-align: center;
+	margin: 0;
+}
+#ibox{
+	padding: 1em;
+	height:5em;
+	overflow: hidden;
+	transition:height .4s;
+}
+#ibox>.txt{
+	width: 98%;
+	outline: none;
+	min-height: 1em;
+	box-sizing: border-box;
+	border-radius: 2em;
+	border: 2px solid dodgerblue ;
+	padding: 0 2em;
+}
+#plus{
+	text-align: center;
+	font-size: 40px;
+	margin: 0;
+}
+.label{
+	margin: .5em 0 ;
+}
+#op{
+	min-height: 1.2em;
+	text-align: center;
+	background-color: #4C87FF;
+	padding: .5em;
+	border-radius: 2em;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>String Toy</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/slider.css">
+</head>
+<body onload="oc()">
+	<main>
+		<h1>Welcome! to String Toy</h1>
+		<div id="ibox">
+			<p class="label"><label for="inp">Enter Text:</label></p>
+			<textarea class="txt" id="inp" rows="3"></textarea>
+			<p id="plus">+</p>
+			<p class="label"><label for="inp2">Enter text to concatenate</label></p>
+			<textarea class="txt" id="inp2" rows="3"></textarea>
+		</div>
+		<section class="switch">
+				<div class="sbox" for="hi" >
+					<label class="inner">
+						<input type="radio" name="hi" id="up" checked>
+						<b id="btext" data-content="ABC"></b>
+					</label>
+					<label class="inner">
+						<input type="radio" name="hi" id="low">
+						<b id="btext" data-content="abc"></b>
+					</label>
+					<label class="inner">
+						<input type="radio" name="hi" id="rev">
+						<b id="btext" data-content="cba"></b>
+					</label>
+					<label class="inner">
+						<input type="radio" name="hi" id="conc">
+						<b id="btext" data-content="ab+cd"></b>
+					</label>
+				</div>
+				<span id="slider"></span>
+			</section>
+		<div id="obox">
+			<p id="label">Output:</p>
+			<p id="op">!</p>
+		</div>
+	</main>	
+	<script src="js/app.js"></script>
+	<script src="js/slider.js"></script>
+	<script src="js/func.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Layout 2</title>
+		<style>
+			header{
+				text-align: center;
+				background-color: yellow;
+			}
+			nav{
+				border-right: 2px solid black;
+				margin-right: 1em;
+				float: left;
+				width:10%;
+				height:500px;
+			}
+			.content{
+				width: 700px;
+			}
+			.post{
+				float: right;
+				position: absolute;
+				top: 4em;
+				right: 1em;
+				width:10%;
+				border: 2px dotted;
+			}
+			footer{
+				text-align: center;
+				clear:both;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="mac">
+			<header>
+				<h1>My blog about my life</h1>
+			</header>
+			<nav>
+				<ul>
+					<li><a href="">Today</a></li>
+					<li><a href="">Yesterday</a></li>
+					<li><a href="">Last Week</a></li>
+					<li><a href="">Archives</a></li>
+				</ul> 
+			</nav>
+			<section class="content">
+				<h2 id="meet">Meeting  with 	Supervisor</h2>
+				<p>August 09,2023 <br>
+					Today I went to university by 	bus <br>
+					I had a meeting with my PhD Supervisor
+				</p>
+				<h2 id="car">New Car</h2>
+				<p>September 19, 2023 <br>
+				Today I bought my new car <br>
+				I met some friends at a Pub</p>
+				<h2 id="parent">Visit my parents</h2>
+				<p>December 24, 2023 <br>
+				Tried to contact my PhD supervisor. He was out of his office <br>
+				I visited my parents and we had nice dinner together</p>
+			</section>
+			<span class="post">
+				<p>Lasts Posts </p>
+				<ul>
+					<li><a href="#meet">Meeting 	with Supervisor</a></li>
+					<li><a href="#car">New Car!!</a></li>
+					<li><a href="#parent">Visit my parents</a></li>
+				</ul>
+			</span>
+			<footer>
+				Contact me: <a href="mailto:sgtrew0@gmail.com">sgtrew0@gmail.com</a>
+			</footer>
+		</div>
+	</body>
+</html>

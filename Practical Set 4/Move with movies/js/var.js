@@ -1,0 +1,16 @@
+let nav=document.getElementById('nav');
+let adnm=document.getElementById('adnm');
+let srm=document.getElementById('srm');
+let overlaysearch=document.getElementById('overlaysearch');
+let overlayadd=document.getElementById('overlayadd');
+let cladd=document.getElementById('cancel');
+let clsrc=document.getElementById('clsrc');
+let np=document.getElementById('npost');
+let nposter=document.getElementById('newposter');
+let nmovie=document.getElementById('newmovie');
+let ndesc=document.getElementById('newdesc');
+let add=document.getElementById('add');
+let info=document.getElementById('info');
+let sbox=document.getElementById('sbox');
+let searchres=document.getElementById('searchres');
+let movie=document.getElementById('mbox');

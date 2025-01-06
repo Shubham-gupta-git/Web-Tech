@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>John Doe - Web Developer</title>
+	<style>
+	body {
+		font-family: Arial, sans-serif;
+		margin: 0;
+		padding: 0;
+		background-color: #f4f4f4;
+	}
+	
+	header {
+		background-color: #333;
+		color: white;
+		padding: 10px 0;
+		text-align: center;
+	}
+	
+	nav {
+		display: flex;
+		background-color: #444;
+		padding: 10px;
+	}
+	
+	nav a {
+		color: white;
+		text-decoration: none;
+		padding: 10px;
+		margin: 0 5px;
+	}
+	
+	section {
+		padding: 20px;
+		margin: 20px;
+		background-color: white;
+		border-radius: 5px;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	}
+	li.desc{
+		list-style: none;
+	}
+	
+	form {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	input, textarea {
+		padding: 10px;
+		margin: 5px 0;
+		border: 1px solid #ccc;
+		border-radius: 3px;
+	}
+	
+	button {
+		padding: 10px;
+		border: none;
+		background-color: #333;
+		color: white;
+		border-radius: 3px;
+	}
+	button:hover{
+		background-color:grey;
+	}
+	</style>
+</head>
+
+<body>
+
+	<header>
+		<h1>John Doe</h1>
+		<p>Web Developer</p>
+	</header>
+
+	<nav>
+		<a href="#about">About Me</a>
+		<a href="#projects">Projects</a>
+		<a href="#contact">Contact</a>
+	</nav>
+
+	<section id="about">
+		<h2>About Me</h2>
+		<p>Hello! I'm John, a passionate web developer with experience in creating dynamic and responsive websites. I enjoy coding and learning new technologies.</p>
+	</section>
+
+	<section id="projects">
+		<h2>Projects</h2>
+		<ul>
+			<li><strong>Project One</strong>
+			</li>
+			<li class="desc">A description of your first project.</li>
+			<li><strong>Project Two</strong>
+			</li>
+			<li class="desc">A description of your second project.</li>
+		</ul>
+	</section>
+
+	<section id="contact">
+		<h2>Contact Me</h2>
+		<form>
+			<p>Name:</p>
+			<input type="text">
+			<p>Email:</p>
+			<input type="text">
+			<p>Message:</p>
+			<textarea name="message" rows="2"></textarea>
+			<button>Send</button>
+		</form>
+	</section>
+
+</body>
+
+</html>
