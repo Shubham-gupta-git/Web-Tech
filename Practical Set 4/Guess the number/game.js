@@ -20,10 +20,10 @@ submit.onclick=function() {
 		hint.style.color = 'green';
 		endGame();
 	} else if (userGuess < randomNumber) {
-		hint.textContent = 'Try something big low! Try again.';
+		hint.textContent = 'Too low!! Try something big.';
 		hint.style.color = 'orange';
 	} else {
-		hint.textContent = 'Too something small! Try again.';
+		hint.textContent = 'Too big!! Try something small.';
 		hint.style.color = 'orange';
 	}
 	
